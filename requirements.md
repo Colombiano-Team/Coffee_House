@@ -1,9 +1,12 @@
 # The requirements
 
-![about-us](./Images/about-us.jpg).
-![footer](./Images/footer.jpg).
 ![main page](./Images/mainpage.jpg).
+![footer](./Images/footer.jpg).
 ![shop](./Images/shop.jpg).
+![about-us](./Images/about-us.jpg).
+
+
+
 
 ## User Stories
 
