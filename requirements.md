@@ -1,9 +1,9 @@
 # The requirements
 
 ![main page](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%201.png).
-![footer](./Images/footer.jpg).
-![shop](./Images/shop.jpg).
-![about-us](./Images/about-us.jpg).
+![footer](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%202.png).
+![shop](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%203.png).
+![about-us](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%204.png).
 
 
 
