@@ -1,11 +1,10 @@
 # The requirements
 
-![main page](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%201.png).
-![footer](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%202.png).
-![shop](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%203.png).
-![about-us](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%204.png).
 
-
+![main page](./Images/wireframe1.png).
+![footer](./Images/wireframe2.png).
+![shop](./Images/wireframe3.png).
+![about-us](./Images/wireframe4.png).
 
 
 ## User Stories
