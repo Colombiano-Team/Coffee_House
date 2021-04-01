@@ -1,6 +1,6 @@
 # The requirements
 
-![main page](./Images/mainpage.jpg).
+![main page](https://github.com/Colombiano-Team/Coffee_House/blob/main/Images/wireframe%201.png).
 ![footer](./Images/footer.jpg).
 ![shop](./Images/shop.jpg).
 ![about-us](./Images/about-us.jpg).
