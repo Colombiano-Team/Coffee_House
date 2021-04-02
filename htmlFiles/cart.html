@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-Coffee House</title>
+    <link rel="icon"
+        href="https://www.pinclipart.com/picdir/middle/534-5343657_coffee-icon-png-png-coffee-cup-icon-clipart.png"
+        sizes="32*32">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <h1>Coffee House</h1>
+                <li><a href="./htmlFiles/cart.html">Contact us</a></li>
+                <li><a href="#">Shop</a></li>
+                <img src="#" alt="">
+            </ul>
+        </div>
+    </header>
+    <div class="tp-container" style="height: 250PX;">
+        <p>cart</p>
+    </div>
+    <!-- ------cart-main ------- -->
+    <main>
+        <div class="small-container">
+            <div class="cart-page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img
+                                    src="../index_Imgaes/osen-listia-fon-derevo-kofe-colorful-kruzhka-chashka-vinta-1.jpg">
+                                <div class="img-info">
+                                    <p>Crispy Cookies</p>
+                                    <small>Price: 5.00 JD</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>5.00 JD</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="cart-info">
+                                <img
+                                    src="../index_Imgaes/plate-tasty-chocolate-chip-cookies-cup-coffee-gray-background-top-view-space-text-138470882.jpg">
+                                <div class="img-info">
+                                    <p>Tasty Choclate</p>
+                                    <small>Price: 7.00 JD</small>
+                                    <br>
+                                    <a href="">Remove</a>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>7.00 JD</td>
+                    </tr>
+                </table>
+        <div class="coupon">
+                    <label for="coupon_code"></label>
+                    <input type="text" name="copoun_code" class="input-text" id="coupon_code" placeholder="Coupon code">
+                    <input type="submit" class="button" name="Apply_coupon" value="APPLY COUPON">
+        </div>
+        <div class="cart-total"><h2>cart totals</h2></div>
+                <div class="total-price">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>12.00 JD</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>
+                                Shipping costs is free.</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td id="totalNumber">12.00 JD</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="checkout">
+               <input type="submit" class="checkout"  value="Proceed to Checkout">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <footer>
+            <div class="copy">
+                <p>all right received &copy;</p>
+            </div>
+            <div class="footerLogo">
+                <h1>Coffee House</h1>
+            </div>
+            <div class="sochial">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </footer>
+        <div class="clear"></div>
+
+    </footer>
+
+</body>
+
+</html>
