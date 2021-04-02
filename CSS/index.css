@@ -255,7 +255,7 @@ text-align: center;
 
 footer{
     background-color: rgb(36, 35, 35);
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     overflow: auto;
     text-align: center;
     
@@ -274,6 +274,7 @@ footer div{
 .copy p{
     color: white;
 }
+
 .footerLogo h1{
     font-family: 'Dancing Script', cursive;
     color: white;
