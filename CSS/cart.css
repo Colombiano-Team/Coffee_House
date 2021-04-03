@@ -1,0 +1,308 @@
+* {box-sizing: border-box;
+    transition: all 0.2s;
+
+}
+body{
+    margin: 0px 0px;
+}
+
+/*------cart-header -------*/
+
+.nav{
+    text-align: center;
+    overflow: auto;
+    margin:0px 0px;
+    padding: 0px 0px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    box-shadow: -1px 4px 9px #00000047;
+}
+.nav ul {
+    margin:0px 0px;
+}
+
+.nav ul li , .nav ul h1 {
+    display: inline;
+    list-style: none;
+    margin-right:100px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #303030;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.nav h1 {
+    font-family: 'Dancing Script', cursive;
+}
+.fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius : 50%;
+    color: white;
+  }
+
+  .fa-facebook:hover {
+    opacity: 0.7;
+    color : blue;
+}
+.fa-instagram:hover {
+    opacity: 0.9;
+    color : rgb(168, 14, 47);
+}
+.fa-snapchat-ghost:hover {
+    opacity: 0.9;
+    color : rgb(243, 239, 14);
+}
+.fa-twitter:hover {
+    opacity: 0.7;
+    color : rgb(32, 52, 230);
+}
+
+.clear{
+    clear: both;
+}
+
+h1{
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    color: #0a0a0ac5;
+    font-size: 18px;
+    line-height: 20px;
+    /* font-family: 'Roboto', sans-serif; */
+}
+button { 
+    padding: 20px 30px;
+    color: rgba(0, 0, 0, 0.774);
+    background-color: white;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+button:hover{
+    background-color: rgb(197, 171, 26);
+    color: white;
+}
+.tp-container{
+    background-color: rgb(248, 247, 247);
+    padding: 10px 10px;
+    overflow: auto;
+    text-align: center;
+}
+.tp-container P{
+    color: #333;
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold; 
+    font-family: 'Roboto', sans-serif;
+    margin-left: 150px;
+    margin-top: 130px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*------cart-main -------*/
+
+.small-container{
+    /* margin:100px 200px; */
+    margin-left: 150px;
+    margin-right: 180px;
+}
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    /* padding: 5px; */
+    padding: 10px 5px;
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #e5e5e5
+}
+td{
+    padding: 10px 5px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #e5e5e5
+    
+}
+td small{
+    color:rgba(27, 27, 27, 1);
+    font-family: 'Roboto', sans-serif;
+}
+td input{
+    width: 50px;
+    height: 38px;
+    padding: 5px;
+    border-color: #666 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.img-info{
+    margin-top: -16px;
+    padding-left: 3px;
+}
+td a{
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+td p{
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+}
+.small-container  .coupon .input-text {
+  /* display: inline-block; */
+  width: 200px;
+  height: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgb(229, 229, 229);
+  color: rgb(161, 12, 12);
+  padding: 12px 15px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: inherit;
+  height: 45px;
+  margin-top: 50px;
+  font-family: 'Roboto', sans-serif;
+}
+.small-container  .coupon .button{
+  width: 200px;
+  height: 20px;
+  box-sizing: border-box;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 26px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.small-container  .coupon .button:hover{
+    background: #e1be64;
+}
+.cart-total{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;  
+    /* margin-left: 150px;
+    margin-top: 75px; */
+    text-transform: uppercase;
+    margin: 70px;
+}
+.total-price{
+display: flex;
+justify-content: flex-end;
+}
+.total-price table{
+    /* max-width: 390px; */
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+#totalNumber{
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+.checkout .checkout{
+  width: 200px;
+  height: 20px;
+  box-sizing: border-box;
+  height: 44px;
+  line-height: 44px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #333;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+.checkout .checkout:hover{
+    background-color: #e1be64;
+}
+
+/*------cart-footer -------*/
+
+footer{
+    background-color: rgb(36, 35, 35);
+    /* padding: 10px 10px; */
+    overflow: auto;
+    text-align: center;
+}
+
+footer div{
+    text-align: center;
+    display: inline-block;
+    
+}
+.copy{
+    margin-right: 260px;
+    
+}
+.copy p{
+    color: white;
+}
+.footerLogo h1{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+.sochial{
+    margin-left: 260px;
+}
