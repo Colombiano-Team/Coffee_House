@@ -35,32 +35,7 @@ body{
 
 
 
-.fa {
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius : 50%;
-    color: white;
-  }
 
-  .fa-facebook:hover {
-    opacity: 0.7;
-    color : blue;
-}
-.fa-instagram:hover {
-    opacity: 0.9;
-    color : rgb(168, 14, 47);
-}
-.fa-snapchat-ghost:hover {
-    opacity: 0.9;
-    color : rgb(221, 255, 27);
-}
-.fa-twitter:hover {
-    opacity: 0.7;
-    color : rgb(32, 52, 230);
-}
 
 .clear{
     clear: both;
@@ -224,6 +199,8 @@ top: 50px;
 .product p{
     padding: 0px 300px;
     color: rgba(0, 0, 0, 0.521);
+   
+
 }
 
 .product-images{
@@ -231,7 +208,7 @@ top: 50px;
     float: left;
     width: 30%;
     margin-right: 30px;
-    text-align: justify;
+    /* text-align: justify; */
     padding: 0 40px;
     text-align: center;
     
@@ -250,6 +227,7 @@ text-align: center;
 .product-images img{
     width: 160px;
     height: 160px;
+    border-radius: 50%;
    
 }
 
@@ -281,4 +259,31 @@ footer div{
 
 .sochial{
     margin-left: 260px;
+}
+
+.fa {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius : 50%;
+    color: white;
+  }
+
+  .fa-facebook:hover {
+    opacity: 0.7;
+    color : blue;
+}
+.fa-instagram:hover {
+    opacity: 0.9;
+    color : rgb(168, 14, 47);
+}
+.fa-snapchat-ghost:hover {
+    opacity: 0.9;
+    color : rgb(221, 255, 27);
+}
+.fa-twitter:hover {
+    opacity: 0.7;
+    color : rgb(32, 52, 230);
 }
