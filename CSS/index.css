@@ -10,7 +10,7 @@ body{
     text-align: center;
     overflow: auto;
     margin:0px 0px;
-    padding: 0px 0px;
+    padding-bottom: 10px;
 }
 .nav ul {
     margin:0px 0px;
