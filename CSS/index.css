@@ -16,6 +16,7 @@ body{
     margin:0px 0px;
 }
 
+
 .nav ul li , .nav ul h1 {
     display: inline;
     list-style: none;
@@ -299,4 +300,14 @@ footer div{
 .nav ul li a:hover{
     border-bottom:1px solid rgb(0, 0, 0);
     
+}
+body > header > div.slideshow-container > div > div{
+    background-color: rgba(0, 0, 0, 0.623);
+    top: 0px;
+    height: 600px;
+
+}
+body > header > div.slideshow-container > div > div > h3:nth-child(1){
+    margin-top: 101px;
+
 }
