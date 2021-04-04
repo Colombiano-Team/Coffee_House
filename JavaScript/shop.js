@@ -1,20 +1,23 @@
 let wholeCards = document.getElementById('whole');
 let selectForm = document.getElementById('selectForm');
+let cartItems = [];
+let rulaArray = [];
+
 
 let coffee = [
     { type: 'coffee', name: 'Brazilian', path: '../shope_img/0m96ckn2y8.png', price: 5.00, id: 0 },
     { type: 'coffee', name: 'Alameed', path: '../shope_img/6AHKYZvcat.png', price: 14.00, id: 1 },
     { type: 'coffee', name: 'Alnasr', path: '../shope_img/7YCjPCd2Dx.png', price: 2.00, id: 2 },
     { type: 'coffee', name: 'Ibrahim', path: '../shope_img/Al5RmF7nm6.png', price: 8.00, id: 3 }
+
 ]
 
 let cookies = [
-    { type: 'cookies', name: 'Anas', path: '../shope_img/1ZHqPTFjMR.png', price: 34.00, id: 4 },
-    { type: 'cookies', name: 'Dina', path: '../shope_img/A8V7iujqOo.png', price: 7.00, id: 5 },
-    { type: 'cookies', name: 'Rula', path: '../shope_img/cpKBiO6v7l.png', price: 9.00, id: 6 },
-    { type: 'cookies', name: 'Abdeed', path: '../shope_img/7QANYjF1qJ.png', price: 1.00, id: 7 },
+    { type: 'cookies', name: 'Anas', path: '../shope_img/1ZHqPTFjMR.png', price: 34.00, id: 0 },
+    { type: 'cookies', name: 'Dina', path: '../shope_img/A8V7iujqOo.png', price: 7.00, id: 1 },
+    { type: 'cookies', name: 'Rula', path: '../shope_img/cpKBiO6v7l.png', price: 9.00, id: 2 },
+    { type: 'cookies', name: 'Abdeed', path: '../shope_img/7QANYjF1qJ.png', price: 1.00, id: 3 },
 ]
-
 
 
 
@@ -29,14 +32,20 @@ function Shop(type, name, path, price, id) {
 Shop.all = [];
 
 
-// function getShopItems() {
+Shop.prototype.removeItem = function (item) {
 
-//     let getObjItems = localStorage.getItem('coffee');
-    
-//     if(getObjItems){
-//     Shop.all =JSON.parse(getObjItems);
-//     }
-// }
+    cartItems.splice(item, 1)
+}
+
+
+function getShopItems() {
+
+    let getObjItems = localStorage.getItem('shop');
+
+    if (getObjItems) {
+        cartItems = JSON.parse(getObjItems);
+    }
+}
 
 // getShopItems();
 
@@ -47,7 +56,7 @@ for (i = 0; i < coffee.length; i++) {
 }
 
 
-console.log(Shop.all);
+// console.log(Shop.all);
 
 for (i = 0; i < cookies.length; i++) {
     let drinksObj = new Shop(cookies[i].type, cookies[i].name, cookies[i].path, cookies[i].price, cookies[i].id);
@@ -55,13 +64,14 @@ for (i = 0; i < cookies.length; i++) {
 }
 
 
+// console.log(Shop.all[0].cartItems);
 
 function setShopItems() {
-    let objString = JSON.stringify(Shop.all);
-    localStorage.setItem('Coffee', objString);
+    let objString = JSON.stringify(cartItems);
+    localStorage.setItem('shop', objString);
 }
 
-setShopItems();
+
 
 
 
@@ -111,13 +121,24 @@ function coffeeRender() {
 
 
         button.addEventListener('click', addToCart);
-        function addToCart() {
+
+
+        function addToCart(event) {
+
+
+            for (let j = 0; j < Shop.all.length; j++) {
+
+
+                if (Number(button.id) === Shop.all[j].id && Shop.all[j].type === 'coffee') {
+                    cartItems.push(coffee[button.id]);
+                    setShopItems();
+                    break;
+                }
+            }
 
 
         }
-
     }
-
 }
 
 
@@ -162,7 +183,23 @@ function cookiesRender() {
         let secondPElement = document.createElement('p');
         secondPElement.textContent = `${cookies[i].price} JD`;
         details.appendChild(secondPElement);
+        button.addEventListener('click', addToCart);
 
+        function addToCart(event) {
+
+
+            for (let j = 0; j < Shop.all.length; j++) {
+
+
+                if (Number(button.id) === Shop.all[j].id && Shop.all[j].type === 'cookies') {
+                    cartItems.push(cookies[button.id]);
+                    setShopItems();
+                    break;
+                }
+            }
+
+
+        }
 
     }
 
@@ -183,7 +220,3 @@ function selectOption(event) {
     }
 
 }
-
-
-// cookiesRender();
-
