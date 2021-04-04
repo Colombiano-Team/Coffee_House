@@ -305,4 +305,244 @@ footer div{
 
 .sochial{
     margin-left: 260px;
+
+}
+/*------------*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  select:not(:-internal-list-box) {
+    overflow: visible !important;
+}
+/*-----------------------------------------------------------------------------------------------*/
+#contact > fieldset > input{
+    width: 210px;
+    margin-left: 20px;
+}
+#contact > fieldset > label{
+    
+    margin-left: 20px;
+
+}
+#contact > fieldset{
+    
+    width: 516px;
+
+    margin-left: 181px;
+
+}
+
+#contact > h1{
+    margin-left: 333px;
+
+}
+#contact > fieldset > label:nth-child(8){
+    box-sizing: border-box;
+    transition: all 0.2s;
+    margin-left: 160px;
+}
+
+#contact > fieldset > input[type=number]:nth-child(13){
+    width: 457px;
+
+}
+#myModal > div{
+    width: 827px;
+    height: 729px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 194px;
+}
+#myModal > div > span{
+    
+    margin-right: 65px;
+    margin-top: 15px;
+    width: 28px;
+    height: 39px;
+
+}
+
+#cars{
+    margin-left: 19px;
+    width: 457px;
+}
+
+#contact > fieldset > input:nth-child(23){
+    width: 457px;
+} 
+#online{
+    
+    width: 15px !important;
+display: inline;
+}
+
+#contact > fieldset > label:nth-child(29) > p{
+    
+    display: inline;
+    position: relative;
+
+}#contact > fieldset > div{
+    
+    display: inline-flex;
+
+}
+#contact > fieldset > p{
+    width: 50px;
+    display: -webkit-inline-box;
+
+}
+#contact > fieldset > div > label > p{
+    
+    width: 52px;
+    display: inline;
+}
+#online{
+    display: contents;
+
+}
+#myModal > div > div > h1{
+    margin-top: 0px;
+    margin-left: 0‒;
+    margin-bottom: 15px;
+    width: 246px;
+    margin-left: 172px;
+    color: aliceblue;
+}
+#myModal > div > div{
+    height: 708px;
+    padding-top: 0px;
+    background-color: #00000087;
+
+}
+
+#contact > fieldset{
+    background-color: #00000075;
+    color: white;
+}
+#contact > fieldset > label:nth-child(28) > img{
+    
+    height: 79px;
+position: relative;
+width: 208px;
+display: flex;
+margin-right: 0px;
+
+}
+#myModal > div{
+    box-sizing: border-box;
+    transition: all 0.2s;
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 827px;
+    height: 729px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 194px;
+    background-image: url(https://data.whicdn.com/images/351060872/original.jpg);
+    background-position-x: -75px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+#contact-submit{
+    box-sizing: border-box;
+    transition: all 0.2s;
+    padding: 20px 30px;
+    color: rgba(0, 0, 0, 0.774);
+    background: #e1be64;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 11px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 304px;
+    height: 42px;
+    padding-right: 38px;
+    margin-left: 91px;
+
+}
+#contact-submit:hover{
+    background-color: blanchedalmond;
+}
+#ondoor{
+    
+    width: 16px !important;
+    height: 16px;
+
+
+}
+#contact > fieldset > label:nth-child(32){
+    margin-left: 0px;
+
+}
+#myModal > div > div{
+    box-sizing: border-box;
+    transition: all 0.2s;
+    height: 730px;
+    padding-top: 0px;
+    background-color: #00000073;
+}
+#myModal > div > div > h1{
+    margin-top: 0px;
+    padding-top: 25px;
+    margin-left: 296px;
+
+}
+#contact > fieldset > label:nth-child(8){
+    color: #58696f;
+}
+#contact > fieldset > label:nth-child(7){
+    color: #58696f;
+
+}
+
+#myModal{
+  display: inline-grid;
+    padding-top: 1px;"
+}
+
+
+#contact > fieldset > input{
+    
+    height: 35px;
+
 }

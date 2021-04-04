@@ -78,12 +78,14 @@
                         <td>7.00 JD</td>
                     </tr>
                 </table>
-        <div class="coupon">
+                <div class="coupon">
                     <label for="coupon_code"></label>
                     <input type="text" name="copoun_code" class="input-text" id="coupon_code" placeholder="Coupon code">
                     <input type="submit" class="button" name="Apply_coupon" value="APPLY COUPON">
-        </div>
-        <div class="cart-total"><h2>cart totals</h2></div>
+                </div>
+                <div class="cart-total">
+                    <h2>cart totals</h2>
+                </div>
                 <div class="total-price">
                     <table>
                         <tr>
@@ -103,7 +105,82 @@
                 </div>
             </div>
             <div class="checkout">
-               <input type="submit" class="checkout"  value="Proceed to Checkout">
+                <!-- -----------pop----- -->
+                <input type="submit" class="checkout" value="Proceed to Checkout" id="myBtn">
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="container">
+                            <h1>CHECKOUT</h1>
+                            <form id="contact" >
+                                
+                                <fieldset>
+                               
+                                    <br/>
+                                   <label for="">Name:</label>
+                                   
+                                   <br/>
+                                        <input placeholder="" type="text" tabindex="" required autofocus name="fname">
+                                  
+                                        <input placeholder="" type="text" tabindex="" required autofocus name="lname">
+                                        <br/>
+                                        <label for="lname">Last Name</label>
+                                        <label for="fname">First Name</label>
+                                        <br/>
+                                        <br/>
+                                       
+                                        <label for="">Mobile No:</label>
+                                        <br>
+                                        <input placeholder="+962-771111111" type="number" name="Phone" tabindex="2" required>
+                                        <br/>
+                                        <br/>
+                                      
+                                        <label for="address">City</label>
+                                           <br/>
+                                            <select name="cars" id="cars">
+                                                <option value="volvo">Amman</option>
+                                                <option value="saab"> Zarqa</option>
+                                                <option value="opel">Irbid</option>
+                                                <option value="audi">Jerash</option>
+                                                <option value="audi">Ajloun</option>
+                                                <option value="audi">Mafraq</option>
+                                                <option value="audi">Salt</option>
+                                                <option value="audi">Madaba</option>
+                                                <option value="audi">Al Karak</option>
+                                                <option value="audi">Tafilah</option>
+                                                <option value="audi">Ma'an</option>
+                                                <option value="audi">Aqaba</option>
+                                            </select>
+                                            <br/>
+                                            <br/>
+                                            <label for="sn">Street Name-building number </label>
+                                            <br/>
+                                            <input placeholder="" type="" tabindex="6" name="sn">
+                                            <br/>
+                                            <br/>
+                                            <label for=""> Payments</label>
+                                        
+                                    <br/>
+                                            <input type="checkbox" id="online" name="online" value="online"><label for="online">
+                                              
+                                                <img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg">   
+                                             </label>                                                                                                             
+                                            <br/>
+                                            <input type="checkbox" id="ondoor" name="ondoor" value="cash">
+                                            <label for="ondoor">cash on delivery</label>
+                                            <br/>
+                                            <button  id="contact-submit" >button</button>
+                                </fieldset>
+                          
+                            </form>
+
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </main>
@@ -125,7 +202,7 @@
         <div class="clear"></div>
 
     </footer>
-
+    <script src="../JavaScript/cartpop.js"></script>
 </body>
 
 </html>

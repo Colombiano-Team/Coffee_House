@@ -6,6 +6,16 @@ body{
     margin: 0px 0px;
 }
 
+body > header > div.slideshow-container > div > div{
+    background-color: rgba(0, 0, 0, 0.548);
+    height: 598px;
+    top: 0px;
+}
+body > header > div.slideshow-container > div > div > h3:nth-child(1){
+    
+    margin-top: 110px;
+
+}
 .nav{
     text-align: center;
     overflow: auto;
