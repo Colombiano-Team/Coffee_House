@@ -190,9 +190,10 @@ body > main > div > div:nth-child(5) > div.product > img{
     font-family: 'Roboto', sans-serif;
 }
 #p{
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 15px;
     font-family: 'Roboto', sans-serif;
+    color: rgba(0, 0, 0, 0.788);
 }
 .product .listProduct a .fa:hover{
     color:#e1be64;

@@ -78,14 +78,14 @@
                         <td>7.00 JD</td>
                     </tr>
                 </table>
-                <div class="coupon">
+                <form id="coupon1" class="coupon">
                     <label for="coupon_code"></label>
                     <input type="text" name="copoun_code" class="input-text" id="coupon_code" placeholder="Coupon code">
-                    <input type="submit" class="button" name="Apply_coupon" value="APPLY COUPON">
-                </div>
-                <div class="cart-total">
-                    <h2>cart totals</h2>
-                </div>
+                    <input type="submit" class="button" name="Apply_coupon" id="coupon_code1" value="APPLY COUPON">
+                    <div class="cart-total">
+                        <h2>cart totals</h2>
+                    </div>
+                </form>
                 <div class="total-price">
                     <table>
                         <tr>
@@ -207,6 +207,8 @@
     <script src="../JavaScript/cartpop.js"></script>
     <script src='../JavaScript/shop.js'></script>
     <script src='../JavaScript/cart.js'></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../JavaScript/discount.js"></script>
 </body>
 ​
 

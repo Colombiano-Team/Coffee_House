@@ -214,9 +214,12 @@ button {
 }
 
 button:hover{
-    color: black;
-    font-size: 13px;
+    background-color: #e1be64;
+    color: rgba(0, 0, 0, 0.877);
+    font-size:17px;
     font-weight: bolder;
+    
+
 }
 
 .fa {
@@ -302,7 +305,8 @@ body > header > div.headerImage{
     
 }
 body > header > div.headerImage{
-   "z-index: 4;position: relative;"
+   z-index: 4;
+   position: relative;
 }
 body > header > div.nav.navFixed > ul{
     position: fixed;
