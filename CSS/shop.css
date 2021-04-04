@@ -17,7 +17,7 @@ body{
     overflow: auto;
     margin:0px 0px;
     padding-bottom: 10px;
-    z-index: 3 ;
+    z-index: 1 ;
     
 }
 
@@ -39,8 +39,24 @@ body{
     font-family: 'Roboto', sans-serif;
     
 }
+body > header > div.nav.navFixed > ul{
+    
+    margin-top: 0px;
 
+}
+body > header > div.nav.navFixed > ul{
+    position: fixed;
+    z-index: 1;
+    background: rgb(243, 231, 216);
+    width: 1352px;
+    height: 58px;
+    
+  
 
+}
+body > header > div.nav.navFixed > ul{
+    box-shadow: -1px 4px 9px #00000047;
+}
 .nav h1 {
     font-family: 'Dancing Script', cursive;
 }
@@ -49,7 +65,7 @@ body{
 }
 
 .navFixed{
-    position: fixed;
+    
     background-color: rgba(22, 3, 3, 0.966);
     width: 100%;
     z-index: 1 !important;
@@ -189,16 +205,18 @@ p{
 button { 
     padding: 20px 30px;
     color: rgba(0, 0, 0, 0.774);
-    background-color: white;
+    background-color: rgb(223, 215, 215);
     margin-top: 40px;
     border: none;
     cursor: pointer;
     font-weight: bold;
 
 }
+
 button:hover{
-    background-color: rgb(197, 171, 26);
-    color: white;
+    color: black;
+    font-size: 13px;
+    font-weight: bolder;
 }
 
 .fa {
@@ -264,14 +282,65 @@ footer div{
 .sochial{
     margin-left: 260px;
 }
+body > header > div.nav.navFixed{
+    
+    padding-bottom: 0px;
 
+}
+body > header > div.headerImage{
+    position: relative;
+    z-index: 2;
 
+}
 #shop a{
   
     color: rgb(218, 171, 18);
 }
 
 .nav ul li a:hover{
-    border-bottom:1px solid rgb(255, 255, 255);
+    border-bottom:1px solid rgb(219, 211, 211);
     
+}
+body > header > div.headerImage{
+   "z-index: 4;position: relative;"
+}
+body > header > div.nav.navFixed > ul{
+    position: fixed;
+    z-index: 1;
+    background: white;
+    margin-top: 265px;
+
+}
+body > header > div.headerImage > div.headerContent{
+    margin-top: 0px;
+    height: 517px;
+    background-color: #00000082;
+
+}
+body > header > div.headerImage > div.headerContent > h1{
+    
+    padding-top: 100px;
+
+}
+body > header > div.headerImage > div.nav{
+    padding-bottom: 0px;
+    background-color:  #00000082;
+
+    padding-top: 15px;
+
+}
+body > header > div.nav.navFixed > ul{
+    
+    margin-top: 0px;
+
+}
+body > header > div.nav.navFixed > ul > li> a {
+    
+    color: #303030;
+
+}
+body > header > div.nav.navFixed > ul > h1 > a {
+    
+    color: #303030;
+
 }
