@@ -110,9 +110,8 @@ form{
 .card {
 float: left;
 width: 30%;
-margin: 0px 10px;
+margin: 0px 17px;
 margin-bottom: 70px;
-
 
 }
 
@@ -154,7 +153,7 @@ width: 100%;
     color: rgba(0, 0, 0, 0.795);
 }
 
-.detalis :first-child{
+.detalis .firstP{
 color: rgb(82, 82, 82);
 font-size: 16px;
 }
