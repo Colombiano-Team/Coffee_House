@@ -292,5 +292,3 @@ for (let i = 0; i < cartItems.length; i++) {
 }
 
 }
-
-

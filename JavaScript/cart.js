@@ -1,4 +1,3 @@
-
 let notDublicate2 = [];
 
 function getShop2() {
@@ -6,11 +5,12 @@ function getShop2() {
     let shop2 = localStorage.getItem('Shop2');
 
     notDublicate2 = JSON.parse(shop2);
+  
 
 }
 
 getShop2();
-
+// notDublicate = notDublicate2;
 console.log(notDublicate2);
 
 
@@ -77,15 +77,25 @@ function tableRender() {
 tableRender();
 
 
-let table = document.getElementById('tableElement');
-table.addEventListener('click', clickfun);
+tableElement.addEventListener('click', clickfun);
 function clickfun(event) {
 
     let rem = event.target.innerText;
     if (rem == 'Remove') {
         // console.log(rem);
         let name = event.target.parentElement.firstChild.textContent;
-        // console.log(name);
+        for (let i = 0; i < notDublicate2.length; i++) {
+            console.log(notDublicate2[i].name);
+            if (notDublicate2[i].name == name) {
+                console.log('Iam event');
+                notDublicate2.splice(i, 1);
+                localStorage.removeItem('Shop2');
+                localStorage.setItem('Shop2',JSON.stringify(notDublicate2));
+                localStorage.removeItem('shop');
+                location.reload();
+            }
+        }
+        console.log(name);
     }
 
 }
