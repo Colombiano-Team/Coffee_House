@@ -158,20 +158,23 @@ td input{
     margin-top: -16px;
     padding-left: 3px;
 }
-td a{
+td .remPara{
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
+    margin-top: 4px;
+    color: red;
+    cursor: pointer;
 }
 td img{
     width: 80px;
     height: 80px;
     margin-right: 10px;
 }
-td p{
+td :first-child{
   color: rgb(10, 10, 10);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .small-container  .coupon .input-text {
   /* display: inline-block; */
@@ -446,7 +449,7 @@ margin-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 194px;
-    background-image: url(https://data.whicdn.com/images/351060872/original.jpg);
+    background-image: url(https://img5.goodfon.com/wallpaper/nbig/4/39/belyi-fon-kofe-kruasany.jpg);
     background-repeat: no-repeat;
     padding-top: 0px;
     padding-bottom: 0px;
