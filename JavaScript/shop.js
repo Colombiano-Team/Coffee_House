@@ -3,20 +3,22 @@ let selectForm = document.getElementById('selectForm');
 let cartItems = [];
 let rulaArray = [];
 
+let notDublicate = [];
+
 
 let coffee = [
-    { type: 'coffee', name: 'Brazilian', path: '../shope_img/0m96ckn2y8.png', price: 5.00, id: 0 },
-    { type: 'coffee', name: 'Alameed', path: '../shope_img/6AHKYZvcat.png', price: 14.00, id: 1 },
-    { type: 'coffee', name: 'Alnasr', path: '../shope_img/7YCjPCd2Dx.png', price: 2.00, id: 2 },
-    { type: 'coffee', name: 'Ibrahim', path: '../shope_img/Al5RmF7nm6.png', price: 8.00, id: 3 }
+    { type: 'coffee', name: 'Brazilian', path: '../shope_img/0m96ckn2y8.png', price: 5.00, id: 0, quentiny: 0 },
+    { type: 'coffee', name: 'Alameed', path: '../shope_img/6AHKYZvcat.png', price: 14.00, id: 1, quentiny: 0 },
+    { type: 'coffee', name: 'Alnasr', path: '../shope_img/7YCjPCd2Dx.png', price: 2.00, id: 2, quentiny: 0 },
+    { type: 'coffee', name: 'Ibrahim', path: '../shope_img/Al5RmF7nm6.png', price: 8.00, id: 3, quentiny: 0 }
 
 ]
 
 let cookies = [
-    { type: 'cookies', name: 'Anas', path: '../shope_img/1ZHqPTFjMR.png', price: 34.00, id: 0 },
-    { type: 'cookies', name: 'Dina', path: '../shope_img/A8V7iujqOo.png', price: 7.00, id: 1 },
-    { type: 'cookies', name: 'Rula', path: '../shope_img/cpKBiO6v7l.png', price: 9.00, id: 2 },
-    { type: 'cookies', name: 'Abdeed', path: '../shope_img/7QANYjF1qJ.png', price: 1.00, id: 3 },
+    { type: 'cookies', name: 'Anas', path: '../shope_img/1ZHqPTFjMR.png', price: 34.00, id: 0, quentiny: 0 },
+    { type: 'cookies', name: 'Dina', path: '../shope_img/A8V7iujqOo.png', price: 7.00, id: 1, quentiny: 0 },
+    { type: 'cookies', name: 'Rula', path: '../shope_img/cpKBiO6v7l.png', price: 9.00, id: 2, quentiny: 0 },
+    { type: 'cookies', name: 'Abdeed', path: '../shope_img/7QANYjF1qJ.png', price: 1.00, id: 3, quentiny: 0 },
 ]
 
 
@@ -30,7 +32,6 @@ function Shop(type, name, path, price, id) {
     Shop.all.push(this);
 }
 Shop.all = [];
-
 
 Shop.prototype.removeItem = function (item) {
 
@@ -132,8 +133,10 @@ function coffeeRender() {
                 if (Number(button.id) === Shop.all[j].id && Shop.all[j].type === 'coffee') {
                     cartItems.push(coffee[button.id]);
                     setShopItems();
+                    notDubFunc();
                     break;
                 }
+                
             }
 
 
@@ -194,8 +197,11 @@ function cookiesRender() {
                 if (Number(button.id) === Shop.all[j].id && Shop.all[j].type === 'cookies') {
                     cartItems.push(cookies[button.id]);
                     setShopItems();
+                    notDubFunc();
+                   
                     break;
                 }
+                
             }
 
 
@@ -211,12 +217,78 @@ selectForm.addEventListener('click', selectOption);
 
 function selectOption(event) {
 
-    console.log(event.target);
     if (event.target.value === 'Coffee') {
         coffeeRender();
     }
     if (event.target.value === 'Cookies') {
         cookiesRender();
     }
+
+}
+
+
+getShopItems();
+
+
+function storageShop2() {
+    if(notDublicate.length !== 0){
+
+    
+    localStorage.setItem('Shop2', JSON.stringify(notDublicate));
+
+    }
+}
+
+function notDubFunc(){
+let count = 0;
+for (let i = 0; i < cartItems.length; i++) {
+    count = 0;
+    for (let a = 0; a < cartItems.length; a++) {
+        count = 0;
+
+        if ((cartItems.length - 1) == a) {
+
+            if (i == 0) {
+                break;
+            }
+            else {
+                for (let d = 0; d < notDublicate.length; d++) {
+
+                    if (notDublicate[d].name == cartItems[i].name) {
+
+                        count++;
+
+                    }
+
+                }
+            }
+            if (count == 0) {
+
+                notDublicate.push(cartItems[i]);
+            }
+
+
+        }
+
+        else if (i === a) {
+
+            // console.log('iam equel');
+            cartItems[i].quentiny++;
+
+        }
+
+
+        else if (Number(cartItems[i].id) === Number(cartItems[a].id) && cartItems[i].name === cartItems[a].name) {
+            // console.log('iam else if');
+            cartItems[i].quentiny++;
+
+
+        }
+
+
+       
+    }
+    storageShop2();
+}
 
 }

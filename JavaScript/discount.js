@@ -39,6 +39,7 @@ function discountclick(event) {
             newprice.textContent=`Total Discount ${Math.ceil(totalpraiceArry * .4)} JD price will be  ${Math.ceil(totatAfter)}  JD `;
         }
         localStorage.removeItem('discount');
+        localStorage.setItem('discount','entercouponnumber');
 
     }
     ///////////////////////////////////////////////
