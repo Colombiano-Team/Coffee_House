@@ -115,6 +115,9 @@ form select{
    color:  rgba(0, 0, 0, 0.747);
 
 }
+form select:before{
+    content: 'Choose category';
+}
 
 .wholeCards{
     text-align: center;
@@ -210,6 +213,7 @@ button {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    
 
 }
 
@@ -221,6 +225,16 @@ button:hover{
     
 
 }
+
+button:focus{
+    background-color: #e1be64;
+    color: rgba(0, 0, 0, 0.877);
+    font-size:17px;
+    font-weight: bolder;
+    content: 'Check your cart' !important;
+    
+}
+
 
 .fa {
     font-size: 30px;
