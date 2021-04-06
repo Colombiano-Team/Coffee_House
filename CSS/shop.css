@@ -221,7 +221,11 @@ button:hover{
     
 
 }
+body > div.swal-overlay.swal-overlay--show-modal{
+    
+    background: #00000075 !important;
 
+}
 .fa {
     font-size: 30px;
     width: 30px;
