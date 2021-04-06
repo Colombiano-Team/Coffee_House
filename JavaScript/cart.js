@@ -96,6 +96,7 @@ function tableRender() {
 
         let inputElement = document.createElement('input');
         inputElement.type = 'number';
+        inputElement.min = '1';
         inputElement.value = 1;
         td2Element.appendChild(inputElement);
 

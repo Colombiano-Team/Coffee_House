@@ -104,8 +104,34 @@ form{
     float: right;
     
 }
+#title_p{
+    float: left;
+}
+#title_p{
+    float: left;
+}
+#title_p p{
+    font-size: 31px;
+    color: rgba(0, 0, 0, 0.836);
+    font-family:'Londrina Solid';
+    margin-bottom: 0px;
+}
+#title_p p{
+    font-size: 31px;
+    color: rgba(0, 0, 0, 0.836);
+    font-family:'Londrina Solid';
+    margin-bottom: 0px;
+}
+#title_p :last-child{
+    margin-top: 0px;
+}
 
 
+
+#title_p h1{
+  
+    font-family:'Londrina Solid';
+}
 form select{
     width: 160px;
    padding:10px 10px;
@@ -115,9 +141,9 @@ form select{
    color:  rgba(0, 0, 0, 0.747);
 
 }
-form select:before{
+/* form select:before{
     content: 'Choose category';
-}
+} */
 
 .wholeCards{
     text-align: center;
@@ -131,6 +157,7 @@ float: left;
 width: 30%;
 margin: 0px 17px;
 margin-bottom: 70px;
+box-shadow:  3px 6px 17px 0px #0000007a ;
 
 }
 
@@ -168,9 +195,13 @@ width: 100%;
    
     
 }
+.detalis{
+    border-top: 1px solid rgba(0, 0, 0, 0.226);
+}
 .detalis p{
     color: rgba(0, 0, 0, 0.795);
 }
+
 
 .detalis .firstP{
 color: rgb(82, 82, 82);
@@ -359,21 +390,15 @@ body > header > div.nav.navFixed > ul > h1 > a {
 body > header > div.headerImage > div.headerContent > h1{
     
     font-size: 60px;
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
 
 }
 body > header > div.headerImage > div.headerContent > p{
     
     font-size: 25px;
-    font-family: 'Oxygen', sans-serif;
-
+    /* font-family: 'Oxygen', sans-serif; */
 }
-body > main > div:nth-child(1) > form > p{
-    
-    display: initial;
-    font-weight: 600;
 
-}
 #selectForm{
     
     width: 317px;
@@ -387,14 +412,13 @@ body > main > div:nth-child(1) > form > p{
     font-family: cursive;
 }
 body > main > div:nth-child(1) > form > p{
-    font-family: cursive;
     font-size: 25px;
+    color: black;
 }
 body > main > div:nth-child(1) > form{
     
    
-    margin-right: 457px;
-    margin-bottom: 0px;
-
+    /* margin-right: 457px;
+    margin-bottom: 0px; */
 
 }
