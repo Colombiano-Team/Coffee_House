@@ -63,19 +63,41 @@ body{
     /* position: relative; */
 }
 .headerContent{
-    margin-top: 100px;
+    margin-top: 0px;
+    height: 517px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.562);
+    box-shadow: 0 0 0black;
+    box-shadow:rgb(0 0 0 / 32%) 0px 12px 20px 0px;
 }
+
 .headerContent h1{
 
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: auto;
+    
+    margin-top: 0px;
+    padding-top: 170px;
+
 }
 .headerContent p{
 
     color: white;
     font-family: 'Roboto', sans-serif;
+   
+}
+body > header > div.headerImage > div.headerContent > p{
+    font-family: 'Oxygen', sans-serif;
+    font-size: x-large;
+}
+body > header > div.headerImage > div.headerContent > h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+}
+body > header > div.headerImage > div.nav{
+    position: relative;
+    background: rgba(0, 0, 0, 0.562);
 }
 h1{
     font-weight: 600;
@@ -166,7 +188,7 @@ body > main > div > div:nth-child(5) > div.product > img{
 }
 .card:hover  {
     transform: scale(1.04);
-    background-color: rgba(104, 6, 6, 0.007); 
+    background-color: rgba(47, 83, 72, 0); 
 }
 
 .product{
@@ -209,6 +231,12 @@ body > main > div > div:nth-child(5) > div.product > img{
 .card:hover .listProduct{
     bottom: 50px;
     left: -15px;
+    padding-top: 144px ;
+    border-bottom-width: 41px  ;
+    height: 329px ;
+    top: 1px ;
+    width: 357px ;
+    background-color: #4a97b394;
 }
 
 .clear{
@@ -379,5 +407,35 @@ body > main > img{
 body > footer{
     
     margin-top: 0px;
+
+}
+/* body > main > div.container > div:nth-child(2) > div.product > div:hover {
+    padding-top: 144px ;
+    border-bottom-width: 41px  ;
+    height: 329px ;
+    top: 1px ;
+    width: 357px ;
+    background-color: #4a97b394;
+} */
+
+/* .card:hover  {
+    padding-top: 144px ;
+    border-bottom-width: 41px  ;
+    height: 329px ;
+    top: 1px ;
+    width: 357px ;
+    background-color: black;
+} */
+body > main > div.container > div:nth-child(3) > div.product > img{
+    
+    height: 330px;
+
+}
+body > main > div.container > div:nth-child(4) > div.product > img{
+    height: 330px;
+}
+body > main > div.container > div:nth-child(2) > div.details{
+    
+    height: 135px;
 
 }

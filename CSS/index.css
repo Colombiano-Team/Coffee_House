@@ -53,9 +53,10 @@ h1{
 }
 
 p{
-    color: #666666c5;
+    color: #555353;
     font-size: 18px;
     line-height: 30px;
+    font-weight: 800;
     
 }
 
@@ -307,8 +308,11 @@ body > header > div.slideshow-container > div > div{
 body > header > div.slideshow-container > div > div > h3:nth-child(1){
     margin-top: 101px;
 }
-body > main > div:nth-child(1) > div.first-info > p:nth-child(2){
+body > main > div:nth-child(1) > div.first-info > p{
     font-family: 'Kiwi Maru', serif;
+    
+    text-align: justify;
+
   }
   body > main > div:nth-child(1) > div.first-info > p:nth-child(3){
     font-family: 'Kiwi Maru', serif;
@@ -340,6 +344,7 @@ body > main > div:nth-child(1) > div.first-info > p:nth-child(2){
     color: white;
     font-size: 21px;
     font-family: 'Oswald', sans-serif;
+    font-weight: unset;
   }
   /* body > main > div.container2 > div > div.keep_inf > p:nth-child(3){
     color: white;
@@ -353,6 +358,7 @@ body > main > div:nth-child(1) > div.first-info > p:nth-child(2){
     color: white;
     font-size: 21px;
     font-family: 'Oswald', sans-serif;
+    font-weight: unset;
   }
   body > main > div:nth-child(3) > div:nth-child(3) > h2{
     font-family: 'Londrina Solid', cursive;
@@ -429,4 +435,9 @@ body > main > div:nth-child(1) > div.first-info > p:nth-child(2){
   }
   body > header > div.slideshow-container > div:nth-child(1) > div{
       background-color: rgba(0, 0, 0, 0.39);
+  }
+  body > main > div:nth-child(3) > div.product > p{
+    color:rgb(70, 62, 62);
+    font-weight: 900;
+
   }

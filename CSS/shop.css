@@ -73,7 +73,7 @@ body > header > div.nav.navFixed > ul{
 
 
 .headerImage{
-    background-image: url(../shope_img/Coffee-HD-Background.jpg); 
+    background-image: url(https://thumbs.gfycat.com/UnselfishAgileFulmar.webp); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -225,15 +225,9 @@ button:hover{
     
 
 }
-
-button:focus{
-    background-color: #e1be64;
-    color: rgba(0, 0, 0, 0.877);
-    font-size:17px;
-    font-weight: bolder;
-    content: 'Check your cart' !important;
+body > div.swal-overlay.swal-overlay--show-modal{
     
-}
+    background: #00000075 !important;
 
 
 .fa {
@@ -360,5 +354,47 @@ body > header > div.nav.navFixed > ul > li> a {
 body > header > div.nav.navFixed > ul > h1 > a {
     
     color: #303030;
+
+}
+body > header > div.headerImage > div.headerContent > h1{
+    
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+
+}
+body > header > div.headerImage > div.headerContent > p{
+    
+    font-size: 25px;
+    font-family: 'Oxygen', sans-serif;
+
+}
+body > main > div:nth-child(1) > form > p{
+    
+    display: initial;
+    font-weight: 600;
+
+}
+#selectForm{
+    
+    width: 317px;
+    padding-top: 10px;
+    border-top-width: 3px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    padding-left: 119px;
+    font-size: x-large;
+    font-family: cursive;
+}
+body > main > div:nth-child(1) > form > p{
+    font-family: cursive;
+    font-size: 25px;
+}
+body > main > div:nth-child(1) > form{
+    
+   
+    margin-right: 457px;
+    margin-bottom: 0px;
+
 
 }
