@@ -13,8 +13,7 @@ body{
     overflow: auto;
     margin:0px 0px;
     padding-bottom: 10px;
-    z-index: 3 ;
-
+  
 }
 
 .nav ul {
@@ -48,19 +47,18 @@ body{
     position: fixed;
     background-color: rgba(22, 3, 3, 0.966);
     width: 100%;
-    z-index: 1 !important;
+  
 }
 
 
 .headerImage{
-    background-image: url(/index_Imgaes/minimalist-black-background-arrangement-coffee-beans_23-2148441212.jpg); 
+    background-image: url(http://file.hstatic.net/1000075078/file/3e0a8783_master.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 580px;
     text-align: center;
-   z-index: 2 !important;
-
+  
 
     /* position: relative; */
 }
@@ -316,3 +314,70 @@ footer div{
 body > footer{  
   margin-top: 20px;
 } 
+
+body > main > div.container > div:nth-child(2) > div.details{
+    
+    height: 147px;
+
+
+}
+body > main > div.container > div:nth-child(2) > div.product > img{
+    
+    width: 343px;
+
+}
+#anas{
+    
+    height: 467px;
+
+}
+#anas > div.product > img{
+    
+    height: 331px;
+
+}
+
+#fixed > ul{
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    margin: 0px 0px;
+    width: 1352px;
+    height: 58px;
+    box-shadow: -1px 4px 9px #00000047;
+    position: fixed;
+  
+    background: white;
+    margin-top: 0px;
+    
+}
+#fixed ul li , #fixed ul h1 {
+    display: inline;
+    list-style: none;
+    margin-right:100px;
+    color: rgb(34, 31, 31);
+}
+#fixed ul li a{
+    text-decoration: none;
+    color: rgb(43, 38, 38);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#fixed  h1 {
+    font-family: 'Dancing Script', cursive;
+}
+body > main > img{
+    
+    margin-top: 70px;
+
+    height: 700px;
+    width: 1349px;
+
+}
+
+body > footer{
+    
+    margin-top: 0px;
+
+}

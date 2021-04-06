@@ -146,7 +146,7 @@ button:hover{
   .first-info{
       float: left;
       width: 40%;
-    
+      
   }
   .first-info h1{
     margin-top: 0px;
@@ -154,7 +154,7 @@ button:hover{
 
 .img-info{
     float: right;
-   
+    
 
 }
 
@@ -165,15 +165,12 @@ button:hover{
 }
 
 .keep_n_touch{
-    background-image: url(/index_Imgaes/photo-1573884054824-95ec03df17da.jpg); 
+    background-image: url(../index_Imgaes/inTouch.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 580px;
     position: relative;
-    
-    
-
 }
 .keep_inf{
 position: absolute;
@@ -187,13 +184,13 @@ top: 50px;
 }
 .keep_inf button {
     padding: 15px 40px;
-    color: rgba(0, 0, 0, 0.795);
-    background-color: rgb(218, 189, 31);
+    color: rgba(252, 252, 252, 0.795);
+    background-color: rgb(10, 10, 10);
 }
 .keep_inf button:hover {
     padding: 15px 40px;
-    color: white;
-    background-color: rgb(90, 53, 29)
+    color: rgb(10, 10, 10);
+    background-color: rgb(248, 247, 246)
 }
 
 .product{
@@ -309,5 +306,127 @@ body > header > div.slideshow-container > div > div{
 }
 body > header > div.slideshow-container > div > div > h3:nth-child(1){
     margin-top: 101px;
-
 }
+body > main > div:nth-child(1) > div.first-info > p:nth-child(2){
+    font-family: 'Kiwi Maru', serif;
+  }
+  body > main > div:nth-child(1) > div.first-info > p:nth-child(3){
+    font-family: 'Kiwi Maru', serif;
+  }
+  body > main > div:nth-child(1) > div.first-info > p:nth-child(4){
+    font-family: 'Kiwi Maru', serif;
+  }
+  body > main > div.container2 > div > div.keep_inf > p:nth-child(2){
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  body > main > div.container2 > div > div.keep_inf > p:nth-child(3){
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+  }
+  body > main > div:nth-child(3) > div.product > p{
+    font-family: 'Kiwi Maru', serif;
+
+  }
+  .first-info h1{
+    font-family: 'Kiwi Maru', serif;
+  }
+  body > main > div:nth-child(1) > div.img-info{
+    margin-top: 180px;
+  }
+  /* body > main > div.container2 > div > div.keep_inf > h1{
+      color: white;
+      font-family: 'Oswald', sans-serif;
+  } */
+  body > main > div.container2 > div > div.keep_inf > p:nth-child(2){
+    color: white;
+    font-size: 21px;
+    font-family: 'Oswald', sans-serif;
+  }
+  /* body > main > div.container2 > div > div.keep_inf > p:nth-child(3){
+    color: white;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+  } */
+  body > main > div:nth-child(3) > div.product > h1{
+    font-family: 'Kiwi Maru', serif;
+  }
+  body > main > div.container2 > div > div.keep_inf > p:nth-child(1){
+    color: white;
+    font-size: 21px;
+    font-family: 'Oswald', sans-serif;
+  }
+  body > main > div:nth-child(3) > div:nth-child(3) > h2{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 22px;
+  }
+  body > main > div:nth-child(3) > div:nth-child(3) > h3{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 17px;
+    color: rgb(70, 62, 62);
+  }
+  body > main > div:nth-child(3) > div:nth-child(3) > p{
+    font-family: 'Londrina Solid', cursive;
+  }
+  body > main > div:nth-child(3) > div:nth-child(4) > h2{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 22px;
+  }
+  body > main > div:nth-child(3) > div:nth-child(4) > h3{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 17px;
+    color: rgb(70, 62, 62);
+  }
+  body > main > div:nth-child(3) > div:nth-child(4) > p{
+    font-family: 'Londrina Solid', cursive;
+  }
+  body > main > div:nth-child(3) > div:nth-child(5) > h2{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 22px;
+  }
+  body > main > div:nth-child(3) > div:nth-child(5) > h3{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 17px;
+    color: rgb(70, 62, 62);
+  }
+  body > main > div:nth-child(3) > div:nth-child(5) > p{
+    font-family: 'Londrina Solid', cursive;
+  }
+  body > header > div.slideshow-container > div:nth-child(3) > div > h3:nth-child(1){
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+  }
+  body > header > div.slideshow-container > div:nth-child(2) > div > h3:nth-child(1){
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+  }
+  body > header > div.slideshow-container > div:nth-child(1) > div > h3:nth-child(1){
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+  }
+  body > header > div.slideshow-container > div:nth-child(1) > div > h1{
+    font-family: 'Oswald', sans-serif;
+  }
+  body > header > div.slideshow-container > div:nth-child(1) > div > h3:nth-child(3){
+    font-family: 'Oxygen', sans-serif;
+  }
+  body > header > div.slideshow-container > div:nth-child(2) > div > h1{
+    font-family: 'Oswald', sans-serif;
+  }
+  body > header > div.slideshow-container > div:nth-child(3) > div > h1{
+    font-family: 'Oswald', sans-serif;
+  }
+  body > header > div.slideshow-container > div:nth-child(2) > div > h3:nth-child(3){
+    font-family: 'Oxygen', sans-serif;
+  }
+  body > header > div.slideshow-container > div:nth-child(3) > div > h3:nth-child(3){
+    font-family: 'Oxygen', sans-serif;
+  }
+  body > main > div:nth-child(3) > div:nth-child(3) > img{  
+    width: 221px;
+    margin-right: 32px;
+  }
+  body > main > div:nth-child(1) > div.img-info > img:nth-child(1){   
+    width: 261px;
+  }
+  body > header > div.slideshow-container > div:nth-child(1) > div{
+      background-color: rgba(0, 0, 0, 0.39);
+  }
