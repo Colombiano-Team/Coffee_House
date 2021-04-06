@@ -119,13 +119,16 @@ function coffeeRender() {
         let secondPElement = document.createElement('p');
         secondPElement.textContent = `${coffee[i].price} JD`;
         details.appendChild(secondPElement);
-
+        console.log(button.onclick);
+        
+      
 
         button.addEventListener('click', addToCart);
 
 
         function addToCart(event) {
 
+            
 
             for (let j = 0; j < Shop.all.length; j++) {
 
@@ -134,6 +137,7 @@ function coffeeRender() {
                     cartItems.push(coffee[button.id]);
                     setShopItems();
                     notDubFunc();
+                    button.textContent = 'Check your cart';
                     break;
                 }
                 

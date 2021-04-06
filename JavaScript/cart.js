@@ -1,11 +1,18 @@
 let notDublicate2 = [];
+let updateButton = document.getElementById('changeBtn');
+let totalCostTable = document.getElementById('totalCost');
+let totalArray = [];
+let allTotal = 0;
+
+let alltotalArray = [];
+let takeAllTotal = 0;
 
 function getShop2() {
 
     let shop2 = localStorage.getItem('Shop2');
 
     notDublicate2 = JSON.parse(shop2);
-  
+
 
 }
 
@@ -17,6 +24,39 @@ console.log(notDublicate2);
 let tableElement = document.getElementById('tableElement');
 
 function tableRender() {
+    let trSubtotoal = document.createElement('tr');
+    totalCostTable.appendChild(trSubtotoal);
+    let tdSubtotal = document.createElement('td');
+    tdSubtotal.textContent = 'Subtotal';
+    trSubtotoal.appendChild(tdSubtotal);
+    let tdSubtotalPrice = document.createElement('td');
+    tdSubtotalPrice.textContent = '0.00 JD';
+    trSubtotoal.appendChild(tdSubtotalPrice);
+
+    let trShipping = document.createElement('tr');
+    totalCostTable.appendChild(trShipping);
+
+    let tdShipping = document.createElement('td');
+    tdShipping.textContent = 'Shipping';
+    trShipping.appendChild(tdShipping);
+
+    let tdShippingCost = document.createElement('td');
+    tdShippingCost.textContent = 'Shipping costs is free.';
+    trShipping.appendChild(tdShippingCost);
+
+    let trTotal = document.createElement('tr');
+    totalCostTable.appendChild(trTotal);
+
+    let tdTotal = document.createElement('td');
+    tdTotal.textContent = 'Total';
+    trTotal.appendChild(tdTotal);
+
+    let tdTotalPrice = document.createElement('td')
+    tdTotalPrice.id = 'totalNumber';
+    tdTotalPrice.textContent = '0.00 JD';
+    trTotal.appendChild(tdTotalPrice);
+
+
 
     for (let i = 0; i < notDublicate2.length; i++) {
 
@@ -47,7 +87,7 @@ function tableRender() {
         divImgElement.appendChild(br);
 
         let remove = document.createElement('p');
-        remove.className='remPara';
+        remove.className = 'remPara';
         divImgElement.appendChild(remove);
         remove.textContent = 'Remove';
 
@@ -63,15 +103,46 @@ function tableRender() {
         trElement.appendChild(td3Element);
 
 
+
+
+
+
+
+
         if (notDublicate) {
             imgTdElement.src = `${notDublicate2[i].path}`
             para.textContent = `${notDublicate2[i].name}`;
             small.textContent = `Price ${notDublicate2[i].price} JD`;
-
-
             td3Element.textContent = `${notDublicate2[i].price}.00 JD`;
+
+            console.log(tdSubtotalPrice.textContent);
+            totalArray.push(notDublicate2[i].price);
+            allTotal+=  totalArray[i]
+            tdSubtotalPrice.textContent= `${allTotal}.00 JD`;
+            tdTotalPrice.textContent = `${allTotal}.00 JD`;
         }
+        updateButton.addEventListener('click', update);
+        function update() {
+            alltotalArray = [];
+            let quant = Number(inputElement.value);
+            // console.log(quant);
+            let multi = quant * Number(small.textContent.slice(6, 8));
+            alltotalArray.push(multi);
+            td3Element.textContent = `Price ${multi}.00 JD`;
+            for(let tArray = 0 ; tArray<alltotalArray.length;tArray++){
+           
+            takeAllTotal+=alltotalArray[tArray];
+            tdTotalPrice.textContent = `${takeAllTotal}.00 JD`;
+            }
+
+
+        }
+
+
     }
+
+
+
 }
 
 tableRender();
@@ -90,7 +161,7 @@ function clickfun(event) {
                 console.log('Iam event');
                 notDublicate2.splice(i, 1);
                 localStorage.removeItem('Shop2');
-                localStorage.setItem('Shop2',JSON.stringify(notDublicate2));
+                localStorage.setItem('Shop2', JSON.stringify(notDublicate2));
                 localStorage.removeItem('shop');
                 location.reload();
             }
@@ -99,3 +170,7 @@ function clickfun(event) {
     }
 
 }
+
+let x = 'Price 9 JD';
+console.log(Number(x.slice(6, 8)));
+console.log(totalArray);

@@ -115,6 +115,9 @@ form select{
    color:  rgba(0, 0, 0, 0.747);
 
 }
+form select:before{
+    content: 'Choose category';
+}
 
 .wholeCards{
     text-align: center;
@@ -210,6 +213,7 @@ button {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    
 
 }
 
@@ -225,7 +229,7 @@ body > div.swal-overlay.swal-overlay--show-modal{
     
     background: #00000075 !important;
 
-}
+
 .fa {
     font-size: 30px;
     width: 30px;

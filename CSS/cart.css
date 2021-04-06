@@ -579,7 +579,7 @@ margin-left: 277px;
     padding-left: 8px;
 
 
-<<<<<<< HEAD
+
 }
 /*body > divbody > div*/
 .tp-container{
@@ -596,8 +596,14 @@ body > div > p{
 .tp-container{
     height: 505px !important;
     z-index: 4;
-    height: 250PX;/* position: absolute; */position: relative;
-  height: 250PX;
+
+    height: 250PX;/* position: absolute; */
+  position: relative;
+  
+
+    height: 250PX;/* position: absolute; */
+    position: relative;
+
     
 }
 
@@ -655,6 +661,34 @@ body > div > div{
 }
 #fixed  h1 {
     font-family: 'Dancing Script', cursive;
-=======
->>>>>>> 6502a2de2b7d74f17b185077b23515938163f1c1
+
 }
+
+#changeBtn{
+    width: 200px;
+    height: 20px;
+    box-sizing: border-box;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 26px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #333;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    vertical-align: middle;
+   
+  }
+ 
+
+
+#changeBtn:hover{
+    background: #e1be64;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+}  
