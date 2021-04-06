@@ -14,11 +14,17 @@ let coffee = [
 
 ]
 
+
 let cookies = [
-    { type: 'cookies', name: 'Anas', path: '../shope_img/1ZHqPTFjMR.png', price: 34.00, id: 0, quentiny: 0 },
-    { type: 'cookies', name: 'Dina', path: '../shope_img/A8V7iujqOo.png', price: 7.00, id: 1, quentiny: 0 },
-    { type: 'cookies', name: 'Rula', path: '../shope_img/cpKBiO6v7l.png', price: 9.00, id: 2, quentiny: 0 },
-    { type: 'cookies', name: 'Abdeed', path: '../shope_img/7QANYjF1qJ.png', price: 1.00, id: 3, quentiny: 0 },
+    { type: 'cookies', name: 'Chocolate_Cookie', path: '../shope_img/62298.jpg', price: 5.00, id:0, quentiny: 0 },
+    { type: 'cookies', name: 'Brown_butter', path: '../shope_img/Brown-Butter-Chocolate-Chip-Cookies-SQUARE.jpg', price: 7.00, id: 1, quentiny: 0 },
+    { type: 'cookies', name: 'Cake Mix Cookies', path: '../shope_img/chewy-spice-cookies.jpg', price: 3.00, id: 2, quentiny: 0 },
+    { type: 'cookies', name: 'chewy-spice-cookies', path: '../shope_img/Cake-Mix-Cookies-2.jpg', price: 1.00, id: 3, quentiny: 0 },
+    { type: 'cookies', name: 'choc chunk', path: '../shope_img/chocchunkstack1.jpg', price: 6.00, id: 4, quentiny: 0 },
+    { type: 'cookies', name: 'chocolate chip', path: '../shope_img/chocolatechipcookies.jpg', price: 4.00, id: 5, quentiny: 0 },
+    { type: 'cookies', name: 'Flourless Chocolate', path: '../shope_img/chocolatechipcookies.jpg', price: 3.00, id: 6, quentiny: 0 },
+    { type: 'cookies', name: 'Mayas Chocolate', path: '../shope_img/Mayas-Cookies-2048x2048-choc-chip_1000x1000.jpg', price: 2.00, id: 7, quentiny: 0 },
+    { type: 'cookies', name: 'batch_chocolate', path: '../shope_img/small-batch-chocolate-chip-cookies-1-720x540.jpg', price: 3.00, id: 8, quentiny: 0 }
 ]
 
 
@@ -180,7 +186,7 @@ function cookiesRender() {
 
         let firstPElement = document.createElement('p');
         firstPElement.className = 'firstP';
-        firstPElement.textContent = 'Drinks';
+        firstPElement.textContent = 'Cookies';
         details.appendChild(firstPElement);
 
         let h2Element = document.createElement('h2');
@@ -225,6 +231,9 @@ function selectOption(event) {
         coffeeRender();
     }
     if (event.target.value === 'Cookies') {
+        cookiesRender();
+    }
+    if (event.target.value === 'Cakes') {
         cookiesRender();
     }
 
