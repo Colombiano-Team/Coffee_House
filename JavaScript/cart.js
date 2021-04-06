@@ -69,7 +69,7 @@ function tableRender() {
             small.textContent = `Price ${notDublicate2[i].price} JD`;
 
 
-            td3Element.textContent = `${notDublicate2[i].price} JD`;
+            td3Element.textContent = `${notDublicate2[i].price}.00 JD`;
         }
     }
 }

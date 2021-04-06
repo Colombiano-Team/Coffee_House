@@ -73,7 +73,7 @@ body > header > div.nav.navFixed > ul{
 
 
 .headerImage{
-    background-image: url(/shope_img/Coffee-HD-Background.jpg); 
+    background-image: url(../shope_img/Coffee-HD-Background.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
