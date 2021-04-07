@@ -39,7 +39,7 @@ let cookies = [
 let cakes = [
     { type: 'cakes', name: 'Assorted Mini Cheesecakes', path: '../ck/Assorted Mini Cheesecakes - 12 Pieces.png', price: 4.00, id: 0, quentiny: 0 },
     { type: 'cakes', name: 'Blueberry Cheesecake', path: '../ck/blueberry cheesecake.jpg', price: 7.00, id: 1, quentiny: 0 },
-    { type: 'cakes', name: 'Chocolate Caramel Pecan Cheesecake', path: '../ck/chocolate caramel pecan cheesecake - 10.jpg', price: 9.00, id: 2, quentiny: 0 },
+    { type: 'cakes', name: 'Chocolate Caramel Pecan', path: '../ck/chocolate caramel pecan cheesecake - 10.jpg', price: 9.00, id: 2, quentiny: 0 },
     { type: 'cakes', name: 'Coconut Cloud  Layer Cake', path: '../ck/coconut cloud  layer cake.jpg', price: 15.00, id: 3, quentiny: 0 },
     { type: 'cakes', name: 'Cookies & Cream Cheesecake', path: '../ck/cookies & cream cheesecake.jpg', price: 34.00, id: 4, quentiny: 0 },
     { type: 'cakes', name: 'Fruit Cheesecake Sampler', path: '../ck/fruit cheesecake sampler.jpg', price: 7.00, id: 5, quentiny: 0 },
