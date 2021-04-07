@@ -61,6 +61,7 @@ function tableRender() {
 
 
     for (let i = 0; i < notDublicate2.length; i++) {
+        alltotalArray = [];
 
         let trElement = document.createElement('tr');
         tableElement.appendChild(trElement);
@@ -123,28 +124,41 @@ function tableRender() {
             allTotal+=  totalArray[i]
             tdSubtotalPrice.textContent= `${allTotal}.00 JD`;
             tdTotalPrice.textContent = `${allTotal}.00 JD`;
-        }
-        updateButton.addEventListener('click', update);
-        function update() {
-            alltotalArray = [];
+
             let quant = Number(inputElement.value);
             // console.log(quant);
             let multi = quant * Number(small.textContent.slice(6, 8));
             alltotalArray.push(multi);
             td3Element.textContent = `Price ${multi}.00 JD`;
-            for(let tArray = 0 ; tArray<alltotalArray.length;tArray++){
-           
-            takeAllTotal+=alltotalArray[tArray];
-            tdTotalPrice.textContent = `${takeAllTotal}.00 JD`;
-            }
+        }
+        updateButton.addEventListener('click', update);
+        function update() {
+            takeAllTotal = 0;
+             quant = Number(inputElement.value);
+            // console.log(quant);
+             multi = quant * Number(small.textContent.slice(6, 8));
+            alltotalArray.push(multi);
+            td3Element.textContent = `Price ${multi}.00 JD`;
+            
 
 
         }
 
 
     }
+    updateButton.addEventListener('click', updateTotal);
+    function updateTotal(){
+        // takeAllTotal = 0;
+console.log(alltotalArray);
+    for(let tArray = 0 ; tArray<alltotalArray.length;tArray++){
+           
+        takeAllTotal+=alltotalArray[tArray];
+        tdTotalPrice.textContent = `${takeAllTotal}.00 JD`;
 
-
+        }
+        alltotalArray = [];
+    }
+    
 
 }
 
@@ -179,8 +193,6 @@ function clickfun(event) {
 
 contact.addEventListener('submit',clearStorage);
 
-function clearStorage(event){
-    
-    console.log('iam inside');
+function clearStorage(){
     localStorage.clear();
 }
