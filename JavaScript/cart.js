@@ -7,6 +7,8 @@ let allTotal = 0;
 let alltotalArray = [];
 let takeAllTotal = 0;
 
+let contact = document.getElementById('contact');
+
 function getShop2() {
 
     let shop2 = localStorage.getItem('Shop2');
@@ -172,6 +174,13 @@ function clickfun(event) {
 
 }
 
-let x = 'Price 9 JD';
-console.log(Number(x.slice(6, 8)));
-console.log(totalArray);
+
+
+
+contact.addEventListener('submit',clearStorage);
+
+function clearStorage(event){
+    
+    console.log('iam inside');
+    localStorage.clear();
+}
